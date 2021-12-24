@@ -1,0 +1,30 @@
+version: '3.5'
+
+services:
+  web:
+    build: ./
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .//:/app
+    ports:
+      - 8876:8000
+    links:
+      - db
+
+  db:
+    image: postgres:latest
+    restart: always
+    expose:
+      - "5432"
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - postgres_HOST=172.18.0.2
+      - postgres_NAME=postgres
+      - postgres_USER=postgres
+      - postgres_PASSWORD=postgres
+      - postgres_PORT=5432
+    ports:
+      - 5432:5432
+       
+    

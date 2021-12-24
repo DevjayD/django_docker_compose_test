@@ -1,0 +1,2264 @@
+{
+	"info": {
+		"_postman_id": "47e783d9-a99c-4d39-a390-a40563d3978b",
+		"name": "Restaurant Manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Company Create",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip911@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"CompanyOne\",\n    \"mobile_number\":\"+919977661166\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/company",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"company"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Company Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"CompanyOne\",\n    \"mobile_number\":\"+919977661166\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/company",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"company"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:09:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "160"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"CompanyOne\",\n    \"mobile_number\": \"+919977661166\",\n    \"email\": null,\n    \"last_updated\": \"2021-08-18T12:09:03.177104Z\",\n    \"timestamp\": \"2021-08-18T12:09:03.177135Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Company List Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip911@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"CompanyThree\",\n    \"mobile_number\":\"+919977661166\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/company",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"company"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Company List Get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"CompanyThree\",\n    \"mobile_number\":\"+919977661166\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/company",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"company"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 04:47:43 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "486"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"CompanyThree\",\n        \"mobile_number\": \"+919977661166\",\n        \"email\": null,\n        \"last_updated\": \"2021-08-19T04:45:33.127767Z\",\n        \"timestamp\": \"2021-08-19T04:45:33.127804Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"CompanyTwo\",\n        \"mobile_number\": \"+919977661166\",\n        \"email\": null,\n        \"last_updated\": \"2021-08-19T03:37:30.519832Z\",\n        \"timestamp\": \"2021-08-19T03:37:30.519866Z\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"CompanyOne\",\n        \"mobile_number\": \"+919977661166\",\n        \"email\": null,\n        \"last_updated\": \"2021-08-18T12:09:03.177104Z\",\n        \"timestamp\": \"2021-08-18T12:09:03.177135Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Restauarant",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip911@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"RestaurantOne\",\n    \"mobile_number\":\"+919977557766\",\n    \"company\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/restaurant",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"restaurant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Restauarant",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"RestaurantOne\",\n    \"mobile_number\":\"+919977557766\",\n    \"company\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/restaurant",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:10:47 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "175"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"RestaurantOne\",\n    \"mobile_number\": \"+919977557766\",\n    \"email\": null,\n    \"company\": 1,\n    \"last_updated\": \"2021-08-18T12:10:47.858715Z\",\n    \"timestamp\": \"2021-08-18T12:10:47.858742Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Menu",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip911@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Menu99",
+							"type": "text"
+						},
+						{
+							"key": "mobile_number",
+							"value": "+919977661166",
+							"type": "text"
+						},
+						{
+							"key": "restaurant",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "menu_file",
+							"type": "file",
+							"src": "/home/trootech/Downloads/menu.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"menu"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "MenuOne",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "MenuOne",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "+919977661166",
+									"type": "text"
+								},
+								{
+									"key": "restaurant",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menu_file",
+									"type": "file",
+									"src": "/home/trootech/Downloads/username.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:12:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"MenuOne\",\n    \"restaurant\": 1,\n    \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n    \"votes\": 0,\n    \"last_updated\": \"2021-08-18T12:12:57.832806Z\",\n    \"timestamp\": \"2021-08-18T12:12:57.832831Z\"\n}"
+				},
+				{
+					"name": "MenuTwo",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "MenuTwo",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "+919977661166",
+									"type": "text"
+								},
+								{
+									"key": "restaurant",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menu_file",
+									"type": "file",
+									"src": "/home/trootech/Downloads/username.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:13:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"MenuTwo\",\n    \"restaurant\": 1,\n    \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n    \"votes\": 0,\n    \"last_updated\": \"2021-08-18T12:13:34.211656Z\",\n    \"timestamp\": \"2021-08-18T12:13:34.211682Z\"\n}"
+				},
+				{
+					"name": "MenuThree",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "MenuThree",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "+919977661166",
+									"type": "text"
+								},
+								{
+									"key": "restaurant",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menu_file",
+									"type": "file",
+									"src": "/home/trootech/Downloads/username.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:13:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "485"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"name\": \"MenuThree\",\n    \"restaurant\": 1,\n    \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n    \"votes\": 0,\n    \"last_updated\": \"2021-08-18T12:13:52.071628Z\",\n    \"timestamp\": \"2021-08-18T12:13:52.071654Z\"\n}"
+				},
+				{
+					"name": "MenuFour",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "MenuFour",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "+919977661166",
+									"type": "text"
+								},
+								{
+									"key": "restaurant",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menu_file",
+									"type": "file",
+									"src": "/home/trootech/Downloads/username.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:16:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "484"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 4,\n    \"name\": \"MenuFour\",\n    \"restaurant\": 1,\n    \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n    \"votes\": 0,\n    \"last_updated\": \"2021-08-18T12:16:46.604021Z\",\n    \"timestamp\": \"2021-08-18T12:16:46.604046Z\"\n}"
+				},
+				{
+					"name": "MenuFive",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "MenuFive",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "+919977661166",
+									"type": "text"
+								},
+								{
+									"key": "restaurant",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menu_file",
+									"type": "file",
+									"src": "/home/trootech/Downloads/username.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:17:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "484"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"name\": \"MenuFive\",\n    \"restaurant\": 1,\n    \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n    \"votes\": 0,\n    \"last_updated\": \"2021-08-18T12:17:05.227688Z\",\n    \"timestamp\": \"2021-08-18T12:17:05.227713Z\"\n}"
+				},
+				{
+					"name": "MenuSix",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "MenuSix",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "+919977661166",
+									"type": "text"
+								},
+								{
+									"key": "restaurant",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menu_file",
+									"type": "file",
+									"src": "/home/trootech/Downloads/username.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:17:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "483"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"name\": \"MenuSix\",\n    \"restaurant\": 1,\n    \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n    \"votes\": 0,\n    \"last_updated\": \"2021-08-18T12:17:22.061191Z\",\n    \"timestamp\": \"2021-08-18T12:17:22.061216Z\"\n}"
+				},
+				{
+					"name": "Create Menu",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Menu99",
+									"type": "text"
+								},
+								{
+									"key": "mobile_number",
+									"value": "+919977661166",
+									"type": "text"
+								},
+								{
+									"key": "restaurant",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "menu_file",
+									"type": "file",
+									"src": "/home/trootech/Downloads/menu.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu/2",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 13:34:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "379"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"name\": \"Menu99\",\n    \"restaurant\": 1,\n    \"menu\": {\n        \"Item_1\": \"this is item 1\",\n        \"Item_2\": \"this is item 2\",\n        \"Item_3\": \"this is item 3\",\n        \"Item_4\": \"this is item 4\",\n        \"Item_5\": \"this is item 5\",\n        \"Item_6\": \"this is item 6\",\n        \"Item_7\": \"this is item 7\",\n        \"Item_8\": \"this is item 8\",\n        \"Item_9\": \"this is item 9\"\n    },\n    \"votes\": 0,\n    \"last_updated\": \"2021-08-19T13:34:54.038295Z\",\n    \"timestamp\": \"2021-08-18T12:13:34.211682Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Voting Employee One",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip4@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "menu_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/voting",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"voting"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Voting Employee Two Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "menu_id",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/voting",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"voting"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:41:09 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "30"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Voting Successful\"\n}"
+				},
+				{
+					"name": "Already Voted",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "menu_id",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/voting",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"voting"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:41:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"non_field_errors\": [\n        \"You Have Already Voted\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Menu List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"menu"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Menu List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:44:13 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2909"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"name\": \"MenuSix\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 0,\n        \"last_updated\": \"2021-08-18T12:17:22.061191Z\",\n        \"timestamp\": \"2021-08-18T12:17:22.061216Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"MenuFive\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:17:05.227688Z\",\n        \"timestamp\": \"2021-08-18T12:17:05.227713Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"MenuFour\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:16:46.604021Z\",\n        \"timestamp\": \"2021-08-18T12:16:46.604046Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"MenuThree\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 0,\n        \"last_updated\": \"2021-08-18T12:13:52.071628Z\",\n        \"timestamp\": \"2021-08-18T12:13:52.071654Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"MenuTwo\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:13:34.211656Z\",\n        \"timestamp\": \"2021-08-18T12:13:34.211682Z\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"MenuOne\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:12:57.832806Z\",\n        \"timestamp\": \"2021-08-18T12:12:57.832831Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "TodaysResult",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip911@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu?todays_result=True",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"menu"
+					],
+					"query": [
+						{
+							"key": "todays_result",
+							"value": "True"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "TodaysResult",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu?todays_result=True",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							],
+							"query": [
+								{
+									"key": "todays_result",
+									"value": "True"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:45:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1939"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"MenuOne\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:12:57.832806Z\",\n        \"timestamp\": \"2021-08-18T12:12:57.832831Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"MenuFive\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:17:05.227688Z\",\n        \"timestamp\": \"2021-08-18T12:17:05.227713Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"MenuFour\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:16:46.604021Z\",\n        \"timestamp\": \"2021-08-18T12:16:46.604046Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"MenuTwo\",\n        \"restaurant\": 1,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:13:34.211656Z\",\n        \"timestamp\": \"2021-08-18T12:13:34.211682Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "TodaysResultByRestraunt",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip4@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu?todays_result=True&restaurant_id=2",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"menu"
+					],
+					"query": [
+						{
+							"key": "todays_result",
+							"value": "True"
+						},
+						{
+							"key": "restaurant_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "TodaysResultByRestraunt",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://0.0.0.0:8000/restaurant/api/v1/menu?todays_result=True&restaurant_id=2",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu"
+							],
+							"query": [
+								{
+									"key": "todays_result",
+									"value": "True"
+								},
+								{
+									"key": "restaurant_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:50:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "486"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 4,\n        \"name\": \"MenuFour\",\n        \"restaurant\": 2,\n        \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n        \"votes\": 1,\n        \"last_updated\": \"2021-08-18T12:16:46.604021Z\",\n        \"timestamp\": \"2021-08-18T12:16:46.604046Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "LoginAPI",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip4@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "thechip1@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/accounts/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"accounts",
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "LoginAPI",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "thechip1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "aloksharma",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8000/accounts/api/v1/login",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"accounts",
+								"api",
+								"v1",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 18 Aug 2021 12:54:05 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.5"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "94"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"ChipOne\",\n    \"email\": \"thechip1@gmail.com\",\n    \"token\": \"0d4c5002-aae4-4200-9ecc-29117071eee0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "CreateEmployee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip911@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"TheChip\",\n    \"email\":\"testemployede2@gmail.com\",\n    \"password\":\"aloksharma\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/accounts/api/v1/employee",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"accounts",
+						"api",
+						"v1",
+						"employee"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateEmployee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"TheChip\",\n    \"email\":\"testemployee2@gmail.com\",\n    \"password\":\"aloksharma\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/accounts/api/v1/create-employee",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"accounts",
+								"api",
+								"v1",
+								"create-employee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 05:24:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 8,\n    \"name\": \"TheChip\",\n    \"email\": \"testemployee2@gmail.com\"\n}"
+				},
+				{
+					"name": "CreateEmployee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"TheChip\",\n    \"email\":\"testemployede2@gmail.com\",\n    \"password\":\"aloksharma\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/accounts/api/v1/employee",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"accounts",
+								"api",
+								"v1",
+								"employee"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 14:03:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9,\n    \"name\": \"TheChip\",\n    \"email\": \"testemployede2@gmail.com\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Restaurant List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "thechip911@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "aloksharma",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"RestaurantOne\",\n    \"mobile_number\":\"+919977557766\",\n    \"company\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/restaurant",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"restaurant"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Restaurant List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"RestaurantOne\",\n    \"mobile_number\":\"+919977557766\",\n    \"company\":1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/restaurant",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"restaurant"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 04:57:16 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "531"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"RestaurantThree\",\n        \"mobile_number\": \"+919977557766\",\n        \"email\": null,\n        \"company\": 1,\n        \"last_updated\": \"2021-08-19T03:37:43.148665Z\",\n        \"timestamp\": \"2021-08-19T03:37:43.148695Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"RestaurantTwo\",\n        \"mobile_number\": \"+919977557788\",\n        \"email\": null,\n        \"company\": 1,\n        \"last_updated\": \"2021-08-18T12:46:02.804292Z\",\n        \"timestamp\": \"2021-08-18T12:46:02.804318Z\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"RestaurantOne\",\n        \"mobile_number\": \"+919977557766\",\n        \"email\": null,\n        \"company\": 1,\n        \"last_updated\": \"2021-08-18T12:10:47.858715Z\",\n        \"timestamp\": \"2021-08-18T12:10:47.858742Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Single Menu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu/8",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8876",
+					"path": [
+						"restaurant",
+						"api",
+						"v1",
+						"menu",
+						"8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Single Menu",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://0.0.0.0:8876/restaurant/api/v1/menu/8",
+							"protocol": "http",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8876",
+							"path": [
+								"restaurant",
+								"api",
+								"v1",
+								"menu",
+								"8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Aug 2021 05:06:35 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.9.6"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "485"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 8,\n    \"name\": \"MenuEight\",\n    \"restaurant\": 1,\n    \"menu\": \"{\\n    \\\"Item_1\\\": \\\"this is item 1\\\",\\n    \\\"Item_2\\\": \\\"this is item 2\\\",\\n    \\\"Item_3\\\": \\\"this is item 3\\\",\\n    \\\"Item_4\\\": \\\"this is item 4\\\",\\n    \\\"Item_5\\\": \\\"this is item 5\\\",\\n    \\\"Item_6\\\": \\\"this is item 6\\\",\\n    \\\"Item_7\\\": \\\"this is item 7\\\",\\n    \\\"Item_8\\\": \\\"this is item 8\\\",\\n    \\\"Item_9\\\": \\\"this is item 9\\\"\\n}\",\n    \"votes\": 1,\n    \"last_updated\": \"2021-08-19T04:28:24.492841Z\",\n    \"timestamp\": \"2021-08-19T04:28:24.492880Z\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "aloksharma",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "thechip911@gmail.com",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
