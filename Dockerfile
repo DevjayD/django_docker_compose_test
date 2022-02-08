@@ -18,5 +18,3 @@ RUN pip install pip==21.2.4
 COPY . /app
 
 RUN pip install  --default-timeout=100 -r requirements.txt
-
-
